@@ -25,7 +25,7 @@ module.exports = {
 };
 
 
-3. **Generate and Open Allure Report: After running your tests, generate the Allure report using the following commands:**
+### 3. **Generate and Open Allure Report: After running your tests, generate the Allure report using the following commands:**
 
 ```bash
 npx allure generate ./allure-results --clean
