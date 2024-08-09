@@ -15,15 +15,18 @@ module.exports = {
   reporter: [
     ["dot"],
     ["list"],
+    ["ortoni-report", reportConfig],
     ["allure-playwright"],
     ["json", { outputFile: "results.json" }]
   ],
   // other configurations
 };
 
+
 ##### 3. **Generate and Open Allure Report: After running your tests, generate the Allure report using the following commands:**
 npx allure generate ./allure-results --clean
 npx allure open ./allure-report/
+
 
 ###### 4. **Additional Notes:**
 Ensure that you have Java installed on your system, as Allure Commandline requires it.
