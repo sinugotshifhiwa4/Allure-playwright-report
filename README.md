@@ -32,7 +32,7 @@ npx allure generate ./allure-results --clean
 npx allure open ./allure-report/
 
 
-###### 4. **Additional Notes:**
+4. **Additional Notes:**
 
 ```bash
 Ensure that you have Java installed on your system, as Allure Commandline requires it.
