@@ -10,14 +10,14 @@
    npm install -D allure-playwright
    npm install -D allure-commandline
 
-Configure Allure Playwright in Playwright Config: Add allure-playwright to the reporter section of your playwright.config.js or playwright.config.ts file. Here is an example configuration:
+2. **Configure Allure Playwright in Playwright Config: Add allure-playwright to the reporter section of your playwright.config.js or playwright.config.ts file. Here is an example configuration:**
 JavaScript
 
+```bash
 module.exports = {
   reporter: [
     ["dot"],
     ["list"],
-    ["ortoni-report", reportConfig],
     ["allure-playwright"],
     ["json", { outputFile: "results.json" }]
   ],
@@ -25,7 +25,9 @@ module.exports = {
 };
 
 
-##### 3. **Generate and Open Allure Report: After running your tests, generate the Allure report using the following commands:**
+3. **Generate and Open Allure Report: After running your tests, generate the Allure report using the following commands:**
+
+```bash
 npx allure generate ./allure-results --clean
 npx allure open ./allure-report/
 
