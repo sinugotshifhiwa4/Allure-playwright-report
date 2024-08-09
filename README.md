@@ -22,7 +22,6 @@ Sure, here's your README file in the correct format:
      reporter: [
        ["dot"],
        ["list"],
-       ["ortoni-report", reportConfig],
        ["allure-playwright"],
        ["json", { outputFile: "results.json" }]
      ],
@@ -41,8 +40,7 @@ Sure, here's your README file in the correct format:
 
 4. **Additional Notes:**
 
-   Ensure that you have Java installed on your system, as Allure Commandline requires it. This setup will enable you to generate beautiful HTML reports using Allure with your Playwright tests. If you need more detailed information, you can refer to the Allure Playwright documentation.
+   This setup will enable you to generate beautiful HTML reports using Allure with your Playwright tests. If you need more detailed information, you can refer to the Allure Playwright documentation.
 
    [Allure Report Documentation](https://docs.qameta.io/allure/)
 
-Feel free to copy each section as needed without any overlap! If you have any more questions or need further assistance, just let me know.
