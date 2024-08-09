@@ -10,7 +10,9 @@
    npm install -D allure-playwright
    npm install -D allure-commandline
 
-#### 2.  **Configure Allure Playwright in Playwright Config: Add allure-playwright to the reporter section of your playwright.config.js or playwright.config.ts file. Here is an example configuration:**
+Configure Allure Playwright in Playwright Config: Add allure-playwright to the reporter section of your playwright.config.js or playwright.config.ts file. Here is an example configuration:
+JavaScript
+
 module.exports = {
   reporter: [
     ["dot"],
