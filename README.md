@@ -33,6 +33,8 @@ npx allure open ./allure-report/
 
 
 ###### 4. **Additional Notes:**
+
+```bash
 Ensure that you have Java installed on your system, as Allure Commandline requires it.
 This setup will enable you to generate beautiful HTML reports using Allure with your Playwright tests. If you need more detailed information, you can refer to the Allure Playwright documentation.
 
