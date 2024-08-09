@@ -1,3 +1,5 @@
+Sure, here's your README file in the correct format:
+
 # Allure-playwright-report
 
 ## Allure Playwright Report Setup
@@ -9,37 +11,38 @@
    ```bash
    npm install -D allure-playwright
    npm install -D allure-commandline
+   ```
 
-2. **Configure Allure Playwright in Playwright Config: Add allure-playwright to the reporter section of your playwright.config.js or playwright.config.ts file. Here is an example configuration:**
+2. **Configure Allure Playwright in Playwright Config:**
 
+   Add `allure-playwright` to the reporter section of your `playwright.config.js` or `playwright.config.ts` file. Here is an example configuration:
 
-```bash
-module.exports = {
-  reporter: [
-    ["dot"],
-    ["list"],
-    ["ortoni-report", reportConfig],
-    ["allure-playwright"],
-    ["json", { outputFile: "results.json" }]
-  ],
-  // other configurations
-};
+   ```javascript
+   module.exports = {
+     reporter: [
+       ["dot"],
+       ["list"],
+       ["ortoni-report", reportConfig],
+       ["allure-playwright"],
+       ["json", { outputFile: "results.json" }]
+     ],
+     // other configurations
+   };
+   ```
 
+3. **Generate and Open Allure Report:**
 
+   After running your tests, generate the Allure report using the following commands:
 
-3. **Generate and Open Allure Report: After running your tests, generate the Allure report using the following commands:**
+   ```bash
+   npx allure generate ./allure-results --clean
+   npx allure open ./allure-report/
+   ```
 
-```bash
-npx allure generate ./allure-results --clean
-npx allure open ./allure-report/
+4. **Additional Notes:**
 
+   Ensure that you have Java installed on your system, as Allure Commandline requires it. This setup will enable you to generate beautiful HTML reports using Allure with your Playwright tests. If you need more detailed information, you can refer to the Allure Playwright documentation.
 
-4. **Additonal Notes:**
+   [Allure Report Documentation](https://docs.qameta.io/allure/)
 
-
-```bash
-Ensure that you have Java installed on your system, as Allure Commandline requires it.
-This setup will enable you to generate beautiful HTML reports using Allure with your Playwright tests. If you need more detailed information, you can refer to the Allure Playwright documentation.
-
-Learn More
-Allure Report Documentation
+Feel free to copy each section as needed without any overlap! If you have any more questions or need further assistance, just let me know.
