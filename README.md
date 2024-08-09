@@ -12,6 +12,8 @@
 
 2. **Configure Allure Playwright in Playwright Config: Add allure-playwright to the reporter section of your playwright.config.js or playwright.config.ts file. Here is an example configuration:**
 
+
+```bash
 module.exports = {
   reporter: [
     ["dot"],
@@ -33,6 +35,9 @@ npx allure open ./allure-report/
 
 
 4. **Additonal Notes:**
+
+
+```bash
 Ensure that you have Java installed on your system, as Allure Commandline requires it.
 This setup will enable you to generate beautiful HTML reports using Allure with your Playwright tests. If you need more detailed information, you can refer to the Allure Playwright documentation.
 
